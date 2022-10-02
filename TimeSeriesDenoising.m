@@ -19,7 +19,7 @@ histogram(origSignal)
 zoom on
 
 % visual-picked threshold
-thresh = 4;
+thresh = 5;
 
 % find data values above and below the threshold
 dataout = find(abs(origSignal) > thresh);
@@ -28,7 +28,7 @@ dataout = find(abs(origSignal) > thresh);
 filtsig = origSignal;
 
 % loop through thresh points and set to median of k
-k = 20; % actual window is k*2+1
+k = 5; % actual window is k*2+1
 n = length(origSignal);
 for i=1:length(dataout)
     
@@ -48,7 +48,7 @@ end
 filtsig2 = filtsig;
 
 % implement the running mean filter
-k = 200; % filter window is actually k*2+1
+k = 150; % filter window is actually k*2+1
 n = length(filtsig);
 for i=1:n
 
