@@ -17,7 +17,7 @@ The way I select the values which are particularly high is setting up a threshol
     <img width="400" src="https://github.com/MariaGoniIba/SP1-Time-series-denoising/blob/main/Histogram.png">
 </p>
 
-In this case, I choose a threshold of -4 and 4. I go through the signal with a loop and replace those values below -4 and above 4 with the median of the data points around. In this case, I select a window of k=20 points to each side. 
+In this case, I choose a threshold of -5 and 5. I go through the signal with a loop and replace those values below -5 and above 5 with the median of the data points around. In this case, I select a window of k=5 points to each side. 
 In the case that the spike is at the very beginning or end, when choosing a window of [i-k:i+k] you may be out of the signal. In these cases, I compute either the [i:i+k] windown in the beginning or the [i-k:i] window in the end.
 
 ```
