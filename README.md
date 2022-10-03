@@ -1,4 +1,4 @@
-# Signal Processing (DS) project 1: Time-series denoising
+# Signal Processing (SP) project 1: Time-series denoising
 
 # Credit
 The dataset and proposal of the exercise is from the Udemy course [Signal Processing Problems, solved in Matlab and in Python](https://www.udemy.com/course/signal-processing/). I highly recommend this course for those learning signal processing.
